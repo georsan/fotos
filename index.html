@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
+    <title>HDSP Photo Contest</title>
+    <link rel="shortcut icon" href="icono.jpeg" type="image/x-icon">
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <!-- Demo styles -->
     <style>
@@ -30,6 +28,7 @@
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
+        height: 80%;
       }
 
       .swiper-slide {
@@ -46,19 +45,27 @@
 
       .boton{
         width: 50px;
-        height: 40px;
+        height: 50px;
         margin: auto;
         text-align: center;
         border: none;  
+        background-image: url('heart-regular.svg');
+        background-repeat: no-repeat;
+        
       }
 
-      .xd {
-        height: 50px;
-       }
-
-      .xd:hover{
+      .boton:hover{
+        background-image: url('heart-solid.svg');
         cursor: pointer;
-      }      
+      }
+      
+      p{
+        margin: 2%;
+        margin-left: 4%;
+        font-size: small;
+      }
+       
+      
 </style>
 
   </head>
@@ -69,58 +76,87 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        <div class="boton" id="1">
-          <img src="me-gusta.png" class="xd" onclick="hola(2)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="1" onclick="hola(1)">
+          
+          
       </div>
         </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        <div class="boton" id="2">
-          <img src="me-gusta.png" class="xd" onclick="hola(2)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="2" onclick="hola(2)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        <div class="boton" id="3">
-          <img src="me-gusta.png" class="xd" onclick="hola(3)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="3" onclick="hola(3)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        <div class="boton" id="4">
-          <img src="me-gusta.png" class="xd" onclick="hola(4)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="4" onclick="hola(4)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        <div class="boton" id="5">
-          <img src="me-gusta.png" class="xd" onclick="hola(5)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="5" onclick="hola(5)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        <div class="boton" id="6">
-          <img src="me-gusta.png" class="xd" onclick="hola(6)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="6" onclick="hola(6)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        <div class="boton" id="7">
-          <img src="me-gusta.png" class="xd" onclick="hola(7)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="7" onclick="hola(7)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        <div class="boton" id="8">
-          <img src="me-gusta.png" class="xd" onclick="hola(8)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="8" onclick="hola(8)">
+          
       </div>
       </div>
       <div class="swiper-slide">
         <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        <div class="boton" id="9">
-          <img src="me-gusta.png" class="xd" onclick="hola(8)">
+        <p>
+          Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción 
+      </p>
+        <div class="boton" id="9" onclick="hola(9)">
+              
           
       </div>
+      
       </div>
     </div>
    
@@ -159,7 +195,7 @@ firebase.analytics();
 
 <script src="script.js"></script>
 
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 
