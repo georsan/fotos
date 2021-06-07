@@ -62,7 +62,7 @@ Ref.child('/').child(id).get(id).then((snapshot) => {
 }
 
 function votar(puntos,id){
-    alert(puntos)
+    
     firebase.database().ref('/'+id).update({
         id,
         puntos    
